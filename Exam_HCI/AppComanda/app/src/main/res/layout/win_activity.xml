@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:id="@+id/linearLayout"
+        android:background="@color/yellow">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/linearLayout2"
+            android:background="@color/yellow">
+        <TextView
+                android:text="HAI RAGGIUNTO IL TRAGUARDO"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/vittoria"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:textSize="30sp"
+                app:layout_constraintHorizontal_bias="0.0" android:textAlignment="center"
+                android:textColor="@color/red"/>
+        <TextView
+                android:text="Punteggi precedenti:"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/textView4"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:textSize="20sp" android:layout_marginTop="130dp"
+                app:layout_constraintHorizontal_bias="0.0" android:textColor="@color/black"
+                android:layout_marginStart="5dp" android:layout_marginEnd="5dp"/>
+        <TextView
+                android:text="Il tuo punteggo è: "
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/ScorePoint"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:textSize="20sp" android:layout_marginTop="90dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:textColor="@color/black" android:layout_marginStart="5dp" android:layout_marginEnd="5dp"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="150dp" android:id="@+id/ListaPunteggi"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:textSize="20sp" android:layout_marginTop="160dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:scrollbars="vertical"
+                android:textColor="@color/black" android:layout_marginStart="5dp" android:layout_marginEnd="5dp"/>
+        <ImageView
+                android:layout_width="401dp"
+                android:layout_height="178dp"
+                android:src="@drawable/car_2"
+                android:id="@+id/imageView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="52dp" android:layout_marginTop="28dp"
+                app:layout_constraintTop_toBottomOf="@+id/vittoria"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

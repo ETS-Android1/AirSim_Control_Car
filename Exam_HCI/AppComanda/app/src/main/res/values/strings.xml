@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#00b600</color>
+    <color name="yellow">#fff100</color>
+    <color name="red">#ff0100</color>
+    <color name="black">#000000</color>
+</resources>
